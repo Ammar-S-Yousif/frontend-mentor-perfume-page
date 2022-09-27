@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+:root{
+    --dark-cyan: hsl(158, 68%, 20%);
+    --light-cyan: hsl(158, 60%, 41%);
+    --main: hsl(331, 100%, 95%);
+    --dark-grayish: hsl(0, 0%, 71%);
+    --white: hsl(0, 0%, 100%);
+
+    --btn-padding: 0.9rem;
+    --border-radius: 10px;
+}
+
+.attribution {
+    font-size: 14px; 
+    text-align: center; 
+    
+}
+.attribution a { 
+    color: hsl(228, 89%, 15%); 
+}
+
+body {    
+    display: grid;
+    min-height: 100vh;
+    font-family:'Montserrat';
+    background-color:var(--main);    
+    align-items: center;
+    justify-content: center;
+    height: 400;
+    width:600;
+  }
+
+
+.container{
+    display:grid;      
+    grid-template-columns:repeat(auto-fill , minmax(15rem, 1fr));
+    column-gap: 1rem;    
+    background-color: var(--white);
+    border-radius: 15px;
+    width:100vh;           
+    overflow: hidden;    
+}
+
+.container .left{
+    display:grid;   
+}
+.container .right{    
+    display: grid;         
+    padding:5px;    
+}
+
+.container .right .name{
+    font-size:50px;
+    font-family: 'Fraunces';   
+    text-align: justify;
+    margin-bottom: 20px; 
+}
+
+.container .right .desc{
+    margin: 10px;
+    padding: 10px;
+    color: var(--dark-grayish);
+    font-family: 'Montserrat', sans-serif;
+    font-size:large;   
+    font-weight:350px;
+    text-align: justify;    
+}
+
+#x{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:small;
+    color:var(--dark-grayish);
+}
+.container .right .btn{
+    background-color: var(--dark-cyan);
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: bolder;
+    color:var(--white);
+    margin: 15px;
+    width: 250px;
+    
+}
+
+img{
+    width:100%;
+}
+
+.container .right .price{
+    margin:10px;
+}
+.container .right .price .new-price{
+    font-family: 'Fraunces';
+    font-weight:bolder;
+    font-size:30px;
+    color: var(--light-cyan);
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.container .right .price .old-price{
+    color:rgb(135, 133, 133);
+    font-size:small;
+    text-decoration-line: line-through;
+}
